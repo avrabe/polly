@@ -15,6 +15,8 @@ foreach(_flag -mfpu=vfp)
   polly_add_cache_flag(CMAKE_CXX_FLAGS "${_flag}")
 endforeach()
 
+polly_add_cache_flag(CMAKE_CXX_FLAGS "-pthread")
+
 set(CMAKE_SYSTEM_PROCESSOR "armv6" CACHE INTERNAL "")
 set(RASPBERRY_PI 1 CACHE INTERNAL "")
 set(CMAKE_SYSTEM_NAME "Linux" CACHE INTERNAL "")
