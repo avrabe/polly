@@ -10,7 +10,7 @@ endif()
 include(polly_add_cache_flag)
 
 # -mcpu=arm1176jzf-s not compatible, removed
-foreach(_flag -mfpu=vfp -march=arm )
+foreach(_flag -mfpu=vfp -march=armv6 )
   polly_add_cache_flag(CMAKE_C_FLAGS   "${_flag}")
   polly_add_cache_flag(CMAKE_CXX_FLAGS "${_flag}")
 endforeach()
