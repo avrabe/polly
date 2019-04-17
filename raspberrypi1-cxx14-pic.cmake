@@ -22,5 +22,6 @@ include(polly_clear_environment_variables)
 include("${CMAKE_CURRENT_LIST_DIR}/flags/cxx14.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/gcc-cross-compile-raspberry-pi.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/os/raspberry-pi1.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/os/raspberry-pi-hardfloat.cmake")
 
 include("${CMAKE_CURRENT_LIST_DIR}/flags/fpic.cmake")
